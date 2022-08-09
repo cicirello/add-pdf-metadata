@@ -1,0 +1,25 @@
+\documentclass[11pt,letterpaper]{article}
+
+% We're using the pdfpages package to import the source pdf into the target.
+\usepackage[final]{pdfpages}
+
+% The hyperref package's options enable specifying metadata for the pdf.
+% We first need the pdftex option to hyperref, and then we can set any or all of
+% the metadata fields inside the pdf as follows.
+
+\usepackage[pdftex, 
+            pdfauthor={Put your name here},
+            pdftitle={Put the title here},
+            pdfsubject={Put the subject here},
+            pdfkeywords={Put any keywords here},
+            pdfproducer={pdflatex or whatever you want for producer},
+            pdfcreator={pdflatex or whatever you want for creator}]{hyperref}
+
+\pagestyle{empty}
+
+\begin{document}
+% The following line includes all of the pages of the specified pdf file, regardless
+% of how that file was produced. Just change the filename in the following line to
+% that of the pdf file you want to add metadata to.
+\includepdf[pages=-]{originalFile.pdf}
+\end{document}
