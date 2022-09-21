@@ -10,3 +10,7 @@ Add metadata to a pdf using pdflatex regardless of how the original pdf was prod
 6. Rename `AddMetadataToPdf.pdf` to the name of the original pdf file.
 7. Alternatively, you could rename the original pdf before the above procedure, and then rename `AddMetadataToPdf.tex`
   based on how you want the target file named.
+
+## Blog Post Explaining Usage
+
+> [Add Metadata to a PDF Using pdfLaTeX](https://dev.to/cicirello/add-metadata-to-a-pdf-using-pdflatex-9e8), posted on DEV on September 21, 2022.
